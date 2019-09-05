@@ -40,7 +40,9 @@ end
 
 def play(board)
   counter_board = Array.new
-  until counter_board.length == 10
-    turn(board) {
+  until counter_board.length == 9
+    turn(board) {counter_board << 1}
+  end
+end
     
   
